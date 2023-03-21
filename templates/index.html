@@ -1,0 +1,12 @@
+<!Doctype html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js')}}"></script>
+    {% block content %}
+    <div><h1>Hello World!</h1></div>
+    <div>This is the value: {{value1}}</div>
+    {% endblock %}
+</body>
+</html>
