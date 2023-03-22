@@ -29,6 +29,9 @@
     <Folder Include="templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dockerfile" />
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
     <Content Include="static\index.js" />
     <Content Include="templates\index.html" />
     <Content Include="templates\profile.html" />
