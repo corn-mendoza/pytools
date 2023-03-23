@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: pytools-deployment
+  name: pytools-deployment
+  namespace: pytools
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pytools-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: pytools-deployment
+    spec:
+      containers:
+      - image: cjmendoza/pytools
+        name: pytools
+        resources: {}
+status: {}
